@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/index.css">
+    <title>Tamiš 0-40</title>
+</head>
+<body>
+
+    <section class="showcase">
+        <header>
+            <h2 class="logo"><a href="index.html">Tamiš 0-40</a></h2>
+            <div class="toggle"></div>
+        </header>
+
+        <video src="video/homepage.mp4" muted loop autoplay></video>
+    
+        <div class="overlay"></div>
+    
+        <div class="text">
+            <h2>Nikada ne prestaj</h2>
+            <h3> da istažuješ prirodu</h3>
+            <p>"Ribolov je puno više od ribe. 
+                To je sjajna prilika kada se možemo
+                 vratiti finoj jednostavnosti 
+                 naših predaka."
+            </p>
+            <a href="">Istraži</a>
+        </div>
+
+        <ul class="social">
+            <h3>Zapratite nas : </h3>
+            <li><a href="https://www.facebook.com/tamis040"><img src="img/fb.png" alt=""></a></li>
+            <li><a href="https://www.instagram.com/tamis040/"><img src="img/ig.png" alt=""></a></li>
+            <li><a href="https://www.youtube.com/channel/UCWE9iNf2atcM3stoiaCNvsw"><img src="img/yt.png" alt=""></a></li>
+        </ul>
+
+    </section>
+
+    <div class="menu">
+        <ul>
+            <li><a href="#"> Prodavnica</a></li>
+            <li><a href="#"> Zajednica</a></li>
+            <li><a href="#"> Saveti</a></li>
+            <li><a href="about-us/about-us.html">Tim</a></li>
+            <li><a href="#"> </a></li>
+        </ul>
+    </div>
+
+
+    <script>
+        const menuToggle = document.querySelector('.toggle')
+        const showcase = document.querySelector('.showcase')
+
+        menuToggle.addEventListener('click', () => {
+            menuToggle.classList.toggle('active')
+            showcase.classList.toggle('active')
+        })
+    </script>
+</body>
+</html>
